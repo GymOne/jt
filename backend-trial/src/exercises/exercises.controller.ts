@@ -19,7 +19,7 @@ export class ExercisesController {
     return this.exercisesService.create(createExerciseDto);
   }
 
-  @Get('findByAllExercises')
+  @Get('findAllExercises')
   findAllExercises() {
     return this.exercisesService.findAllExercises();
   }
