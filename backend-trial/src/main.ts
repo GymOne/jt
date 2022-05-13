@@ -8,8 +8,8 @@ async function bootstrap() {
     origin: '*',
   });
   const config = new DocumentBuilder()
-      .setTitle('GymOne API')
-      .setDescription('GymOne API description')
+      .setTitle('GymOneJT API')
+      .setDescription('GymOneJT API description')
       .setVersion('0.01a')
       .addTag('gym')
       .build();
