@@ -13,7 +13,7 @@ export declare class ExercisesController {
     private readonly exercisesService;
     constructor(exercisesService: ExercisesService);
     create(createExerciseDto: CreateExerciseDto): Promise<import("./entities/exercise.entity").Exercise>;
-    findAllExercises(): Promise<(import("mongoose").Document<unknown, any, import("./entities/exercise.entity").Exercise> & import("./entities/exercise.entity").Exercise & {
+    getAllExercises(): Promise<(import("mongoose").Document<unknown, any, import("./entities/exercise.entity").Exercise> & import("./entities/exercise.entity").Exercise & {
         _id: import("mongoose").Types.ObjectId;
     })[]>;
     findOneById(id: string): Promise<import("mongoose").Document<unknown, any, import("./entities/exercise.entity").Exercise> & import("./entities/exercise.entity").Exercise & {

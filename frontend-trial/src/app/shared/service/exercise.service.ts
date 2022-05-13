@@ -16,8 +16,8 @@ export class ExerciseService {
     return this._http.post(`http://localhost:3000/exercise/create`, {name:name});
   }
 
-  public findAllExercises():Observable<exercise[]>{
-    return this._http.get<exercise[]>(`http://localhost:3000/exercise/findAllExercises`);
+  public getAllExercises():Observable<exercise[]>{
+    return this._http.get<exercise[]>(`http://localhost:3000/exercise/getAllExercises`);
   }
 
   public findById(exerciseId:string){

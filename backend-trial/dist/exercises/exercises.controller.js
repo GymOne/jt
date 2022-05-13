@@ -23,8 +23,8 @@ let ExercisesController = class ExercisesController {
     create(createExerciseDto) {
         return this.exercisesService.create(createExerciseDto);
     }
-    findAllExercises() {
-        return this.exercisesService.findAllExercises();
+    getAllExercises() {
+        return this.exercisesService.getAllExercises();
     }
     findOneById(id) {
         return this.exercisesService.findOneById(id);
@@ -41,11 +41,11 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], ExercisesController.prototype, "create", null);
 __decorate([
-    (0, common_1.Get)('findAllExercises'),
+    (0, common_1.Get)('getAllExercises'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
-], ExercisesController.prototype, "findAllExercises", null);
+], ExercisesController.prototype, "getAllExercises", null);
 __decorate([
     (0, common_1.Get)('findById/:id'),
     __param(0, (0, common_1.Param)('id')),
