@@ -19,9 +19,9 @@ export class ExercisesController {
     return this.exercisesService.create(createExerciseDto);
   }
 
-  @Get('findByUserId/:userId')
-  findAllByUserId(@Param('userId') userId: string) {
-    return this.exercisesService.findAllByUserId(userId);
+  @Get('findByAllExercises')
+  findAllExercises() {
+    return this.exercisesService.findAllExercises();
   }
 
   @Get('findById/:id')

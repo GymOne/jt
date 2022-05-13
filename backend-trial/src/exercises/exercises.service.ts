@@ -11,12 +11,11 @@ export class ExercisesService {
 
   async create(createExerciseDto: CreateExerciseDto): Promise<Exercise> {
     return await this.exerciseModel.create({
-      name: createExerciseDto.name,
-      userId: createExerciseDto.userId,
+      name: createExerciseDto.name
     });
   }
-  async findAllByUserId(userId: string) {
-    return await this.exerciseModel.find({ userId: userId }).exec();
+  async findAllExercises() {
+    return await this.exerciseModel.find().exec();
   }
 
   async findOneById(id: string) {

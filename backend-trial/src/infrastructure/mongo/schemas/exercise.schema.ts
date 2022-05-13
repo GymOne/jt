@@ -10,7 +10,6 @@ export const ExerciseSchema = new Schema({
 
 ExerciseSchema.index(
   {
-    userId: 1,
     name: 1,
   },
   {
